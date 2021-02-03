@@ -11,8 +11,8 @@ def is_a_number(input):
 
 keep_filtered = False
 min_length = 0
-gc_low = -1
-gc_high = -1
+gc_low = 0
+gc_high = 100
 output_base_name = ''
 if len(sys.argv) == 2:
     file_name = sys.argv[1]
