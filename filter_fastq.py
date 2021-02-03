@@ -52,10 +52,6 @@ if keep_filtered == True:
 passed = output_base_name + '_passed.fastq'
 passed_reads = open(passed, 'a')
 
-print(type(gc_low))
-print(type(gc_high))
-
-
 with open(file_name) as fastq:
     Length = -1
     while Length != 0:
@@ -78,7 +74,6 @@ with open(file_name) as fastq:
                     filtered_reads.writelines(sequence+'\n')
                     filtered_reads.writelines(comment+'\n')
                     filtered_reads.writelines(quality+'\n')
-print(type(GC_content))
 
 passed_reads.close()
 if keep_filtered == True:
